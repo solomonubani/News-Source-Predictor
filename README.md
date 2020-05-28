@@ -66,8 +66,11 @@ Layer 2: The Output layer comprises a layer dense network with sigmoid activatio
 Table 2: Model summary
 ### 3.3	Model Parameters
 **Activation Function:** We used ReLU as the activation function. ReLU is a non-linear activation function, which helps complex relationships in the data to be captured by the model. Sigmoid activation function was used in the output layer.
+
 **Optimizer:** We use adam optimizer, which is an adaptive learning rate optimizer.
+
 **Loss Function:** We will train a network to output a probability over the 2 classes using binary Cross-Entropy loss. It is very useful for multi-class classification.
+
 **Class Weights:** Because we have an imbalanced data set, CNN(6k+) versus NYPost(1k+) we added weights to the Neural Network model. We assigned the NYPost class a weight 6 times that of the CNN class
 
 We ran the model with Batch Size of 500 and an Epoch of 20. 
